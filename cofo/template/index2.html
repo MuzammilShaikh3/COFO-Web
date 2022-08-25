@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  
+      <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="/static/assets/css/styles.css">
+
+        <script defer data-domain="firstwebsite.com" src="https://plausible.io/js/plausible.js"></script>
+
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>cofo</title>
+    </head>
+    <body>
+
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">COFO</a>     <span class="home__title-color">{{ username }}</span>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">HOME</a></li>
+                        <li class="nav__item"><a href="#order" class="nav__link">ORDER</a></li>
+                        
+                        <li class="nav__item"><a href="{{ url_for('signup') }}" class="nav__link">SIGNUP</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Discover <br>the  <span class="home__title-color">best food in </span><br> PVPPCOE</h1>
+					
+      
+                    <a href="{{ url_for('login') }}" class="button">LOGIN</a>
+                </div>
+				
+
+                <div class="home__social">
+                    <a href="" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="" class="home__social-icon"><i class='bx bxl-behance' ></i></a>
+                    <a href="" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                </div>
+
+                <div class="home__img">    
+                    <img src="/static/assets/img/eat.png" alt="">
+                </div>
+            </section>
+			
+            <section class="work section" id="order">
+                <h2 class="section-title">ORDER</h2>
+
+                <div class="work__container bd-grid">
+                    <div class="work__img">
+                        <img src="/static/assets/img/1.jpg" alt="">
+                    </div>
+                    <div class="work__img">
+                        <img src="/static/assets/img/2.jpg" alt="">
+                    </div>
+                    <div class="work__img">
+                        <img src="/static/assets/img/3.jpg" alt="">
+                    </div>
+                    <div class="work__img">
+                        <img src="/static/assets/img/4.jpg" alt="">
+                    </div>
+                    <div class="work__img">
+                        <img src="/static/assets/img/5.jpg" alt="">
+                    </div>
+                    <div class="work__img">
+                        <img src="/static/assets/img/6.jpg" alt="">
+                    </div>
+                </div>
+            </section>
+
+           
+
+        
+        <footer class="footer">
+            <p class="footer__title">cofo</p>
+            <div class="footer__social">
+                <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+            </div>
+            <p>&#169; 2021 copyright all right reserved by pvppco students</p>
+        </footer>
+
+
+        
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        
+        <script src="/static/assets/js/main.js"></script>
+    </body>
+</html>
